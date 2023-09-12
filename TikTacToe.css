@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family= família= Amatic+SC:wght@700 &Kanit :ital,wght@1,200 & display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Amatic SC', cursive;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0rem 1rem 1rem;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#title{
+    display: flex;
+}
+
+#imgVelhinha{
+    width: 100px;
+    padding-bottom: 0.5rem;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1em;
+    gap: 0.5rem;
+}
+
+.nameDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.namesPlayers{
+    display: flex;
+    gap: 2rem;
+}
+
+#namePlayer2, #namePlayer1{
+    border: none;
+    border: 0.2em solid #15c6a0;
+}
+
+#resetDiv{
+    padding-top: 1em;
+    display: flex;
+    gap: 2em;
+}
+
+#buttonPlay{
+    padding: 1rem;
+    background-color: #15c6a0;
+    border-radius: 0.5rem;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+#winner {
+    background-color: #25a340;
+}
+
+#loser {
+    background-color: #ff0000;
+}
+
+#resetButton{
+    padding: 1rem;
+    background-color: #15c6a0;
+    border-radius: 0.5rem;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+
+.main-container{
+    border: 0.4em solid black;
+    width: 60%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+#timetoPlay{
+    padding: 1rem;
+}
+
+#game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    height: 50%;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width:  400px;
+    height: 320px;  
+}
+
+.square{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+    cursor: pointer;
+    border: 0.2rem solid rgb(0, 0, 0);
+}
+
+.square:nth-child(3n+1) {
+    border-left: none;
+}
+
+.square:nth-child(-n+3) {
+    border-top: none;
+}
+
+.square:nth-child(3n) {
+    border-right: none;
+}
+
+.square:nth-last-child(-n+3) {
+    border-bottom: none;
+}
+
+
+@media (max-width: 768px) {
+    .namesPlayers{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #resetDiv{
+        padding-top: 5px;
+    }
+     
+    #game{
+        padding: 0;
+    }
+
+    #board{
+        width: 300px;
+        height: 270px;
+    }
+
+    #imgVelhinha{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 740px) {
+    .namesPlayers{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .main-container{
+        border: 0.2em solid black;
+    }
+
+    #resetDiv{
+        padding-top: 5px;
+    }
+
+    .square{
+        border: 3px solid black;
+    }
+     
+
+    #board{
+        width: 300px;
+        height: 250px;
+    }
+
+    #imgVelhinha{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 550px ){
+
+    .main-container{
+        border: 0.2em solid black;
+        width: 90%;
+        height: 90%;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .main-container{
+        border: 0.2em solid black;
+    }
+
+    
+    #board{
+        width: 250px;
+        height: 220px;
+    }
+    
+    h1{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 490px ){
+    
+    .main-container{
+        border: 0.2em solid black;
+        width: 90%;
+        height: 90%;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .square{
+        border: 3px solid black;
+    }
+    
+    h1{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 290px ){
+    
+    .main-container{
+        border: 0.2em solid black;
+        width: 90%;
+        height: 90%;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    #board{
+        width: 225px;
+        height: 200px;
+    }
+
+    .square{
+        border: 3px solid black;
+    }
+    
+    h1{
+        font-size: 1.5em;
+    }
+}
+  

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="TikTacToe.css">
+    <script src="TikTacToe.js" defer></script>
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+<div class="main-container">
+    <div id="header">
+        <div id="title">
+            <h1>Jogo da Velha #</h1>
+            <img src="VelhadoJogo.jfif" alt="VelhinhaDesenho" id="imgVelhinha">
+        </div>
+        <div class="namesPlayers">
+            <div class="nameDiv">
+                <label for="namePlayer1" id="namePlayerLabel">Nome do Jogador 1:</label>
+                <input type="text" id="namePlayer1">
+            </div>
+            <div class="nameDiv">
+                <label for="namePlayer2" id="namePlayerLabel">Nome do Jogador 2: </label>
+                <input type="text" id="namePlayer2">
+            </div>
+        </div>
+        <div id="resetDiv">
+            <button id="buttonPlay">Iniciar</button>
+            <button id="resetButton">Reiniciar</button>
+        </div>
+        <h4 id="timetoPlay">Jogador da vez: <span id="winnerMessage"></span></h4>
+
+    </div>
+    <div id="game">
+        <div id="board">
+           <div class="square" data-square="1"></div>
+           <div class="square" data-square="2"></div>
+           <div class="square" data-square="3"></div>
+           <div class="square" data-square="4"></div>
+           <div class="square" data-square="5"></div>
+           <div class="square" data-square="6"></div>
+           <div class="square" data-square="7"></div>
+           <div class="square" data-square="8"></div>
+           <div class="square" data-square="9"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
